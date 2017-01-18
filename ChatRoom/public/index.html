@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+   <script src="js/index.js"></script>
+</head>
+<body>
+<section id="sec1">
+    <div id="container">
+        <p>精灵宝可梦聊天室</p>
+        <div id="user"><img src="images/pic1.jpg" alt=""></div>
+        <div class="tit hide">请选择头像</div>
+        <br>
+        <div id="checkUser"></div>
+        <span class="fa-neuter sex bl" id="fa-neuter"></span>&nbsp;
+        <span class="fa-mercury sex" id="fa-mercury"></span><br>
+        <div class="titsex hide">请选择性别</div>
+        <input id="login" type="text" placeholder="请输入用户名">
+        <div id="btn">
+            <button>登陆</button>
+        </div>
+    </div>
+    <div class="bg"></div>
+</section>
+<section id="sec2">
+    <div id="row">
+        <div id="state">
+            <div id="myState">
+                <div id="myPic"></div>
+                <p id="name"></p><br>
+                <p id="now">在线</p><br>
+                <span></span>
+                <ul id="status">
+                    <li><span class="fa-th-list"></span></li>
+                    <ul>
+                        <li>在线</li>
+                        <li>离开</li>
+                        <li>正忙</li>
+                    </ul>
+                </ul>
+                <p id="pepNum">当前在线:<b></b>人</p>
+            </div>
+            <div id="otherState"></div>
+        </div>
+        <div id="messages">
+            <div id="totalMessage">
+
+            </div>
+            <div id="message">
+                <div id="txt"><input type="text" placeholder="在这里输入您的聊天内容" id="txtMessage"></input></div>
+                <div id="sendBtn"><button>发送</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="bg"></div>
+</section>
+<div class="talkOneByOne">
+    <div class="talkToSomeOne">
+        <p class="close">x</p>
+    </div>
+    <div class="OneByOneMessages"></div>
+    <div class="OneByOneMessage">
+        <input type="text" id="neirong"></input><button id="btnsend">发送</button>
+    </div>
+</div>
+<section id="someOneIn"></section>
+</body>
+</html>
